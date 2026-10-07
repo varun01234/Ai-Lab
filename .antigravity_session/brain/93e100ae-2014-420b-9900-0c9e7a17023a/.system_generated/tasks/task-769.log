@@ -1,0 +1,38 @@
+= : The term '=' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2 char:2
++  = 'C:\Users\varun\AppData\Local\Programs\MinGit'
++  ~
+    + CategoryInfo          : ObjectNotFound: (=:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+New-Item : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:3 char:37
++ New-Item -ItemType Directory -Force -Path  | Out-Null
++                                     ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.NewItemCommand
+ 
+= : The term '=' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:4 char:2
++  = 'C:\Users\varun\AppData\Local\Temp\mingit.zip'
++  ~
+    + CategoryInfo          : ObjectNotFound: (=:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Invoke-WebRequest : Missing an argument for parameter 'OutFile'. Specify a parameter of type 'System.String' and try 
+again.
+At line:5 char:126
++ ... eleases/download/v2.47.1.windows.1/MinGit-2.47.1-64-bit.zip' -OutFile
++                                                                  ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-WebRequest], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+ 
+Expand-Archive : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String' and try again.
+At line:6 char:16
++ Expand-Archive -Path  -DestinationPath  -Force
++                ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Expand-Archive], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Expand-Archive
+ 

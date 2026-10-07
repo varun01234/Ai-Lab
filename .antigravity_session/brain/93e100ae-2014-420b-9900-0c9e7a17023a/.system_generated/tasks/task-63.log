@@ -1,0 +1,17 @@
+= : The term '=' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:2
++  = 'c:\Users\varun\Downloads\AI-Lab\askpass.cmd';  = 'force'; ssh -o  ...
++  ~
+    + CategoryInfo          : ObjectNotFound: (=:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+= : The term '=' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:52
++  = 'c:\Users\varun\Downloads\AI-Lab\askpass.cmd';  = 'force'; ssh -o  ...
++                                                    ~
+    + CategoryInfo          : ObjectNotFound: (=:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Warning: Permanently added '100.74.180.23' (ED25519) to the list of known hosts.

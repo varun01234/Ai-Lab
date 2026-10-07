@@ -1,0 +1,10 @@
+HTTP/2 200 
+accept-ranges: bytes
+content-type: text/html; charset=utf-8
+date: Wed, 07 Oct 2026 02:55:37 GMT
+etag: "4b8ba7d0bd157f71b79576c0824a3a1a"
+last-modified: Mon, 21 Sep 2026 19:28:59 GMT
+server: uvicorn
+x-process-time: 0.001009
+content-length: 11318
+

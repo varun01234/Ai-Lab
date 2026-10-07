@@ -1,0 +1,18 @@
+=== 1. ROUTING & TAILSCALE ===
+default via 172.31.250.1 dev eth0 proto static 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+172.31.250.0/24 dev eth0 proto kernel scope link src 172.31.250.2 
+100.74.180.23  ai-lab           rixhsurf@  linux    -                                                          
+100.82.102.60  dataism          rixhsurf@  windows  offline, last seen 157d ago                                
+100.98.81.85   galaxy-a16-5g    rixhsurf@  android  idle, tx 287428 rx 277560                                  
+100.78.241.51  laptop-1j1963hj  rixhsurf@  windows  active; direct 152.59.182.162:41641, tx 5930696 rx 680128  
+=== 2. PING & DNS ===
+PING huggingface.co (3.171.171.65) 56(84) bytes of data.
+64 bytes from server-3-171-171-65.atl59.r.cloudfront.net (3.171.171.65): icmp_seq=1 ttl=243 time=27.5 ms
+64 bytes from server-3-171-171-65.atl59.r.cloudfront.net (3.171.171.65): icmp_seq=2 ttl=243 time=24.8 ms
+64 bytes from server-3-171-171-65.atl59.r.cloudfront.net (3.171.171.65): icmp_seq=3 ttl=243 time=38.8 ms
+
+--- huggingface.co ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 24.817/30.348/38.765/6.048 ms
+=== 3. RAW SPEEDTEST TO FAST CDN ===

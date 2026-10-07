@@ -1,0 +1,10 @@
+https://ai-lab.tail282021.ts.net (tailnet only)
+|-- / proxy http://100.74.180.23:4170
+
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       172.31.250.0/24           
+
+tcp        0      0 127.0.0.1:3000          0.0.0.0:*               LISTEN      169444/docker-proxy 

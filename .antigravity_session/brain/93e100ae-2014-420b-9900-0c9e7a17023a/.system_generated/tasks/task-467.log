@@ -1,0 +1,143 @@
+Hit:1 https://deb.nodesource.com/node_22.x nodistro InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+Get:5 https://apt.grafana.com stable InRelease [7660 B]
+Get:6 https://pkgs.tailscale.com/stable/ubuntu noble InRelease
+Get:7 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1373 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [306 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1700 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1730 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [396 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:17 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5752 B]
+Get:18 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1073 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [223 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1218 kB]
+Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [245 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.3 kB]
+Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.6 kB]
+Fetched 9427 kB in 4min 20s (36.3 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gyp handlebars libjs-async libjs-events libjs-inherits libjs-is-typedarray
+  libjs-prettify libjs-regenerate libjs-source-map libjs-sprintf-js
+  libjs-typedarray-to-buffer libssl-dev libuv1-dev node-abbrev
+  node-ampproject-remapping node-ansi-escapes node-ansi-regex node-ansi-styles
+  node-aproba node-are-we-there-yet node-argparse node-arrify node-async
+  node-async-each node-babel-plugin-add-module-exports node-babel7-runtime
+  node-balanced-match node-base64-js node-binary-extensions
+  node-brace-expansion node-busboy node-camelcase node-caniuse-lite
+  node-chownr node-chrome-trace-event node-ci-info node-cjs-module-lexer
+  node-clone node-clone-deep node-color-convert node-color-name node-colors
+  node-commander node-commondir node-concat-stream
+  node-console-control-strings node-convert-source-map node-core-js
+  node-core-js-pure node-core-util-is node-data-uri-to-buffer
+  node-decompress-response node-deep-is node-defaults node-define-property
+  node-delegates node-depd node-diff node-electron-to-chromium node-encoding
+  node-end-of-stream node-err-code node-error-ex node-es-module-lexer
+  node-escape-string-regexp node-eslint-utils node-eslint-visitor-keys
+  node-esquery node-estraverse node-esutils node-events node-fancy-log
+  node-fast-deep-equal node-fast-levenshtein node-fetch node-find-up
+  node-flatted node-for-in node-for-own node-foreground-child
+  node-fs-readdir-recursive node-fs-write-stream-atomic node-fs.realpath
+  node-function-bind node-functional-red-black-tree node-get-caller-file
+  node-get-stream node-glob node-globals node-got node-graceful-fs
+  node-has-flag node-has-unicode node-hosted-git-info node-iconv-lite
+  node-ieee754 node-iferr node-imurmurhash node-indent-string node-inflight
+  node-inherits node-ini node-interpret node-ip node-ip-regex node-is-arrayish
+  node-is-binary-path node-is-buffer node-is-descriptor node-is-extendable
+  node-is-extglob node-is-path-cwd node-is-plain-obj node-is-plain-object
+  node-is-stream node-is-typedarray node-is-windows node-isarray node-isexe
+  node-isobject node-js-tokens node-jsesc node-json-buffer
+  node-json-parse-better-errors node-json-schema node-json-schema-traverse
+  node-json-stable-stringify node-jsonify node-jsonparse node-kind-of
+  node-levn node-loader-runner node-locate-path node-lodash-packages
+  node-lowercase-keys node-lru-cache node-memfs node-merge-stream
+  node-mimic-response node-minimatch node-minimist node-minipass
+  node-mute-stream node-n3 node-negotiator node-neo-async node-npm-run-path
+  node-object-inspect node-once node-optimist node-optionator node-osenv
+  node-p-cancelable node-p-limit node-p-locate node-p-map node-path-dirname
+  node-path-exists node-path-is-absolute node-path-is-inside node-path-type
+  node-pify node-pkg-dir node-postcss-value-parser node-prelude-ls
+  node-process-nextick-args node-promise-inflight node-promise-retry
+  node-promzard node-prr node-pump node-punycode node-quick-lru
+  node-randombytes node-read node-readable-stream node-rechoir node-regenerate
+  node-regenerate-unicode-properties node-regenerator-runtime
+  node-regenerator-transform node-regexpp node-regjsgen node-repeat-string
+  node-require-directory node-resolve node-resolve-cwd node-resolve-from
+  node-resumer node-retry node-run-queue node-safe-buffer
+  node-serialize-javascript node-set-blocking node-set-immediate-shim
+  node-shebang-command node-shebang-regex node-signal-exit node-slash
+  node-slice-ansi node-source-list-map node-source-map node-source-map-support
+  node-spdx-correct node-spdx-exceptions node-spdx-expression-parse
+  node-spdx-license-ids node-sprintf-js node-ssri node-string-decoder
+  node-strip-bom node-strip-json-comments node-supports-color node-tapable
+  node-terser node-text-table node-through node-time-stamp
+  node-to-fast-properties node-tslib node-type-check node-typedarray
+  node-typedarray-to-buffer node-undici
+  node-unicode-canonical-property-names-ecmascript
+  node-unicode-match-property-value-ecmascript
+  node-unicode-property-aliases-ecmascript node-unique-filename node-uri-js
+  node-util-deprecate node-uuid node-v8flags node-validate-npm-package-license
+  node-wcwidth.js node-webpack-sources node-wordwrap node-wrappy
+  node-write-file-atomic node-xtend node-y18n node-yallist
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libaria2-0 libssh2-1t64
+The following NEW packages will be installed:
+  aria2 libaria2-0 libssh2-1t64
+0 upgraded, 3 newly installed, 0 to remove and 13 not upgraded.
+Need to get 1614 kB of archives.
+After this operation, 5942 kB of additional disk space will be used.
+Get:1 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh2-1t64 amd64 1.11.0-4.1ubuntu0.24.04.4 [121 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libaria2-0 amd64 1.37.0+debian-1build3 [1105 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 aria2 amd64 1.37.0+debian-1build3 [387 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 1614 kB in 57s (28.2 kB/s)
+Selecting previously unselected package libssh2-1t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 141722 files and directories currently installed.)
+Preparing to unpack .../libssh2-1t64_1.11.0-4.1ubuntu0.24.04.4_amd64.deb ...
+Unpacking libssh2-1t64:amd64 (1.11.0-4.1ubuntu0.24.04.4) ...
+Selecting previously unselected package libaria2-0:amd64.
+Preparing to unpack .../libaria2-0_1.37.0+debian-1build3_amd64.deb ...
+Unpacking libaria2-0:amd64 (1.37.0+debian-1build3) ...
+Selecting previously unselected package aria2.
+Preparing to unpack .../aria2_1.37.0+debian-1build3_amd64.deb ...
+Unpacking aria2 (1.37.0+debian-1build3) ...
+Setting up libssh2-1t64:amd64 (1.11.0-4.1ubuntu0.24.04.4) ...
+Setting up libaria2-0:amd64 (1.37.0+debian-1build3) ...
+Setting up aria2 (1.37.0+debian-1build3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.

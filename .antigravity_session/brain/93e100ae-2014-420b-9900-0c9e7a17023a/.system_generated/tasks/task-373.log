@@ -1,0 +1,72 @@
+
+============================================================
+DATAISM LAB - QWEN DAEMON PRE-MODEL CERTIFICATION SUITE
+============================================================
+Execution Timestamp: 2026-10-06 22:59:46 UTC
+Host: ai-lab (100.74.180.23)
+Target Environment: Ubuntu 24.04.5 LTS | Hyper-V VM
+
+============================================================
+LAYER 1: SANDBOX CERTIFICATION & ISOLATION
+============================================================
+[PASS] 1.1 Official Qwen Docker Image Present
+      Evidence: Image ghcr.io/qwenlm/qwen-code:0.25.0 confirmed in local docker store
+[PASS] 1.2 Docker Socket Absence (/var/run/docker.sock)
+      Evidence: No running containers mount /var/run/docker.sock
+[PASS] 1.3 Personal Home Dir Unmounted (/home/labadmin)
+      Evidence: Zero container mounts to /home/labadmin; workspace strictly confined to /srv/nwa/workspaces
+[PASS] 1.4 Non-Privileged Execution Policy
+      Evidence: No running containers execute with privileged flags
+[PASS] 1.5 Fail-Closed Sandbox Confinement
+      Evidence: Rootfs write blocked: Read-only file system
+
+============================================================
+LAYER 2: MCP & TOOLS CONFIGURATION
+============================================================
+[PASS] 2.1 GitHub MCP Extension Enabled
+      Evidence: Official GitHub MCP server extension enabled for workspace
+[PASS] 2.2 Memory MCP Server Approved & Connected
+      Evidence: Qwen mcp list status: Configured MCP servers:
+✓ memory: npx -y @modelcontextprotocol/server-memory (stdio) - Connected
+[PASS] 2.3 Live MCP JSON-RPC Tool Invocation
+      Evidence: MCP server-memory responded to tools/call create_entities & search_nodes over stdio
+
+============================================================
+LAYER 3: PERSISTENT MEMORY / RAG RETRIEVAL
+============================================================
+[PASS] 3.1 Cross-Session Memory Disk Persistence
+      Evidence: File /srv/nwa/workspaces/memory/memory.json verified (262 bytes)
+[PASS] 3.2 Entity Store & Retrieval Fidelity
+      Evidence: Stored entity observations recovered from disk: {"type":"entity","name":"Qwen-Daemon-Production","entityType":"DaemonArchitecture","observations":["Sandbox isolation active with zero host-root or docker socket leaks","Approved workspace is /srv/nwa
+
+============================================================
+LAYER 4: PERMISSIONS & APPROVAL GATE ENFORCEMENT
+============================================================
+[PASS] 4.1 Foreman Planning & Delegation Endpoint
+      Evidence: http://127.0.0.1:8765/goal returned accepted_for_planning
+[PASS] 4.2 Approval Gate Destructive Action Interception
+      Evidence: Destructive action intercepted and blocked pending administrator token approval
+[PASS] 4.3 Agent Role Boundaries (Foreman/Worker/Compliance)
+      Evidence: All 3 agent definitions confirmed active with explicit approvalMode: plan
+[PASS] 4.4 Policy Deny Rules in Settings
+      Evidence: 8 dangerous command patterns blocked in Qwen permissions deny list
+
+============================================================
+LAYER 5: MODEL JAIL QUARANTINE & DAEMON UI
+============================================================
+[PASS] 5.1 Dedicated Model Jail Quarantine
+      Evidence: Directory /srv/nwa-model/models exists with mode 750 (root:nwa-model quarantined)
+[PASS] 5.2 Daemon User Interface (Open WebUI) Ready
+      Evidence: http://127.0.0.1:3000 responded with HTTP 200 OK, ready for model router backend
+
+============================================================
+FINAL ACCEPTANCE SUMMARY
+============================================================
+
+Total Criteria Tested : 16
+Passed Criteria       : 16
+Failed Criteria       : 0
+
+OVERALL VERDICT: >>> PASS - PRE-MODEL BACKEND PRODUCTION CERTIFIED <<<
+
+Report written to: /srv/nwa/workspaces/reviews/PREMODEL_FINAL_ACCEPTANCE_REPORT_20261006-225948.txt

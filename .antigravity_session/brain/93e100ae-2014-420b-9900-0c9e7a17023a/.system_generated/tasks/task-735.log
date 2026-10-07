@@ -1,0 +1,10 @@
+Oct 05 22:05:13 ai-lab qwen[142089]: qwen serve listening on http://127.0.0.1:4170 (mode=http-bridge, workspace=/srv/nwa/workspaces)
+Oct 05 22:05:13 ai-lab qwen[142089]: qwen serve: --require-auth enabled (bearer token mandatory on every route, including loopback /health).
+Oct 06 02:02:23 ai-lab qwen[154422]: qwen serve listening on http://100.74.180.23:4170 (mode=http-bridge, workspace=/srv/nwa/workspaces)
+Oct 06 02:02:23 ai-lab qwen[154422]: Address: http://100.74.180.23:4170
+Oct 06 02:02:23 ai-lab qwen[154422]: qwen serve: --require-auth enabled (bearer token mandatory on every route, including loopback /health).
+Oct 06 02:14:18 ai-lab qwen[156426]: qwen serve listening on http://100.74.180.23:4170 (mode=http-bridge, workspace=/srv/nwa/workspaces)
+Oct 06 02:14:18 ai-lab qwen[156426]: Address: http://100.74.180.23:4170
+Oct 06 02:14:18 ai-lab qwen[156426]: qwen serve: --require-auth enabled (bearer token mandatory on every route, including loopback /health).
+Oct 06 02:17:15 ai-lab qwen[157298]: qwen serve listening on http://100.74.180.23:4170 (mode=http-bridge, workspace=/srv/nwa/workspaces)
+Oct 06 02:17:15 ai-lab qwen[157298]: Address: http://100.74.180.23:4170

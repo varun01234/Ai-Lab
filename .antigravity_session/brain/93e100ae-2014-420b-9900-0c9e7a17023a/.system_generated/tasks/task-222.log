@@ -1,0 +1,21 @@
+==============================================
+TASK 1: SANDBOX CERTIFICATION & ISOLATION
+==============================================
+Tue Oct  6 22:43:01 UTC 2026
+  [PASS] Official Qwen Code 0.25.0 image present (ghcr.io/qwenlm/qwen-code:0.25.0)
+  [PASS] Qwen sandbox container running: qwen-code-0.25.0-1e85493f (7d1a11287f3c)
+  [PASS] Privileged container flag is FALSE
+  [INFO] Active Mounts in qwen-code-0.25.0-1e85493f:
+    /tmp -> /tmp (true)
+    /home/labadmin -> /home/labadmin (true)
+    /srv/nwa/home/.qwen -> /home/node/.qwen (true)
+    /srv/nwa/home/.qwen -> /srv/nwa/home/.qwen (true)
+  [PASS] Docker socket /var/run/docker.sock is NOT mounted
+  [PASS] Host root / is NOT mounted in container
+  [PASS] nwa-qwen.service has QWEN_SANDBOX=docker drop-in active
+  [INFO] Running disposable hardened container isolation test...
+  [PASS] Isolated execution: Docker socket absent inside container
+  [PASS] Fail-closed check: Read-only container rootfs blocks unauthorized file writes
+----------------------------------------------
+TASK 1 RESULT: 8 PASSED, 0 FAILED
+----------------------------------------------

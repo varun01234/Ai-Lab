@@ -1,0 +1,35 @@
+Usage: qwen [options] [command]
+
+Qwen Code - Launch an interactive CLI, use -p/--prompt for non-interactive mode
+
+Commands:
+  qwen [query..]             Launch Qwen Code CLI  [default]
+  qwen auth                  Configure authentication (removed)
+  qwen batch <command>       Run many independent requests through the DashScope Batch API
+  qwen board <command>       Share work with other agents through a board
+  qwen channel <command>     Manage messaging channels (Telegram, Discord, etc.)
+  qwen extensions <command>  Manage Qwen Code extensions.
+  qwen hooks                 Manage Qwen Code hooks (use /hooks in interactive mode).
+  qwen mcp                   Manage MCP servers
+  qwen review <command>      Run a review non-interactively (`run`), plus the internal helpers used by the /review skill (PR worktree setup, context fetch, rules loading, presubmit checks, cleanup)
+  qwen sandbox [cmd...]      Inspect the sandbox backend, or run a command inside it
+  qwen serve                 Run Qwen Code as a local HTTP daemon (Stage 1 experimental: --http-bridge)
+  qwen sessions <command>    Manage Qwen Code sessions
+  qwen update                Check for Qwen Code updates and install if available
+
+Positionals:
+  query  Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive.
+
+Options:
+      --telemetry                       Enable telemetry? This flag specifically controls if telemetry is sent. Other --telemetry-* flags set specific values but do not enable telemetry on their own.  [deprecated: Use the "telemetry.enabled" setting in settings.json instead. This flag will be removed in a future version.] [boolean]
+      --telemetry-target                Set the telemetry target (local or gcp). Overrides settings files.  [deprecated: Use the "telemetry.target" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: "local", "gcp"]
+      --telemetry-otlp-endpoint         Set the OTLP endpoint for telemetry. Overrides environment variables and settings files.  [deprecated: Use the "telemetry.otlpEndpoint" setting in settings.json instead. This flag will be removed in a future version.] [string]
+      --telemetry-otlp-protocol         Set the OTLP protocol for telemetry (grpc or http). Overrides settings files.  [deprecated: Use the "telemetry.otlpProtocol" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: "grpc", "http"]
+      --telemetry-log-prompts           Enable or disable logging of user prompts for telemetry. Overrides settings files.  [deprecated: Use the "telemetry.logPrompts" setting in settings.json instead. This flag will be removed in a future version.] [boolean]
+      --telemetry-outfile               Redirect all telemetry output to the specified file.  [deprecated: Use the "telemetry.outfile" setting in settings.json instead. This flag will be removed in a future version.] [string]
+  -d, --debug                           Run in debug mode?  [boolean] [default: false]
+      --bare                            Minimal mode: skip implicit startup auto-discovery and only honor explicitly provided CLI inputs.  [boolean] [default: false]
+      --safe-mode                       Disable all customizations (context files, hooks, extensions, skills, MCP servers) for troubleshooting.  [boolean]
+      --proxy                           Proxy for Qwen Code, like schema://user:password@host:port  [deprecated: Use the "proxy" setting in settings.json instead. This flag will be removed in a future version.] [string]
+      --insecure                        Skip TLS certificate verification for API connections (for self-signed certs in trusted/lab environments). Equivalent to setting QWEN_TLS_INSECURE=1. WARNING: removes protection against man-in-the-middle attacks.  [boolean] [default: false]
+      --chat-recording                  Enable chat recording to disk. If false, chat history is not saved and --continue/--resume will not work.  [boolean]

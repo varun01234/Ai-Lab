@@ -1,0 +1,9 @@
+=== TESTING OFFICIAL VENDOR MEMORY MCP SERVER ===
+1. Initialize Response: {'name': 'memory-server', 'version': '0.6.3'}
+2. Discovered Tools: ['create_entities', 'create_relations', 'add_observations', 'delete_entities', 'delete_observations', 'delete_relations', 'read_graph', 'search_nodes', 'open_nodes']
+3. Store (create_entities) Result: [{'type': 'text', 'text': '[\n  {\n    "name": "Qwen-Daemon-Production",\n    "entityType": "DaemonArchitecture",\n    "observations": [\n      "Sandbox isolation active with zero host-root or docker socket leaks",\n      "Approved workspace is /srv/nwa/workspaces",\n      "MCP memory persistence verified on 2026-10-07"\n    ]\n  }\n]'}]
+4. Retrieve (search_nodes) Result: [{'type': 'text', 'text': '{\n  "entities": [\n    {\n      "name": "Qwen-Daemon-Production",\n      "entityType": "DaemonArchitecture",\n      "observations": [\n        "Sandbox isolation active with zero host-root or docker socket leaks",\n        "Approved workspace is /srv/nwa/workspaces",\n        "MCP memory persistence verified on 2026-10-07"\n      ]\n    }\n  ],\n  "relations": []\n}'}]
+
+=== CHECKING DISK PERSISTENCE ===
+Warning: memory.json file not found in cwd, searching...
+Found files: 

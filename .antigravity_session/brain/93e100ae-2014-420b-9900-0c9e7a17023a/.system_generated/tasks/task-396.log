@@ -1,0 +1,32 @@
+=== INSPECTING HUGGING FACE MODEL REPOSITORIES ===
+
+Repository: huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
+Total files: 51
+  - Huihui-Qwen3.8-27B-abliterated-GSQ-RCO-IQ3_S-mtp.gguf
+  - Huihui-Qwen3.8-27B-abliterated-GSQ-RCO-IQ3_S.gguf
+  - Huihui-Qwen3.8-27B-abliterated-GSQ-RCO-IQ3_XXS-mtp.gguf
+  - Huihui-Qwen3.8-27B-abliterated-GSQ-RCO-IQ3_XXS.gguf
+  - Huihui-Qwen3.8-27B-abliterated-Q2_K.gguf
+  - Huihui-Qwen3.8-27B-abliterated-Q2_K_L.gguf
+  - Huihui-Qwen3.8-27B-abliterated-Q3_K.gguf
+  - Huihui-Qwen3.8-27B-abliterated-Q3_K_L.gguf
+  ... and 39 more quantization variants
+
+Repository: mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+Total files: 13
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.IQ4_XS.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q2_K.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q3_K_L.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q3_K_M.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q3_K_S.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q4_K_M.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q4_K_S.gguf
+  - Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.Q5_K_M.gguf
+  ... and 3 more quantization variants
+
+Repository: huihui-ai/Huihui-Qwen3-8B-abliterated-v2
+Total files: 16
+  - model-00001-of-00004.safetensors
+  - model-00002-of-00004.safetensors
+  - model-00003-of-00004.safetensors
+  - model-00004-of-00004.safetensors

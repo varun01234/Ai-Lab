@@ -1,0 +1,3 @@
+/etc/systemd/system/nwa-qwen.service:2:Description=NWA Qwen Code backend (qwen serve, loopback only)
+/etc/systemd/system/nwa-qwen.service:13:ExecStart=/usr/bin/qwen serve --hostname 100.74.180.23 --port 4170 --no-web --require-auth --workspace /srv/nwa/workspaces --allow-origin https://ai-lab.tail282021.ts.net
+/etc/systemd/system/nwa-qwen.service.d/10-nwa-bind.conf:10:ExecStart=/usr/bin/qwen serve --hostname 100.74.180.23 --port 4170 --require-auth --workspace /srv/nwa/workspaces --allow-origin https://ai-lab.tail282021.ts.net

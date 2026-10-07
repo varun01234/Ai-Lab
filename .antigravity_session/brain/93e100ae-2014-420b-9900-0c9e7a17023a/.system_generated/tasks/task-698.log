@@ -1,0 +1,31 @@
+qwen board
+
+Share work with other agents through a board
+
+Commands:
+  qwen board show                   Print the board once
+  qwen board task <subject>         Create a task
+  qwen board claim <id>             Take ownership of a task
+  qwen board done <id>              Complete a task you own
+  qwen board ask <to> <question>    Ask another actor a question
+  qwen board answer <id> <answer>   Answer an ask addressed to you
+  qwen board decline <id> <reason>  Decline an ask addressed to you
+  qwen board prune                  Remove settled items older than a cutoff
+
+Options:
+      --telemetry                Enable telemetry? This flag specifically controls if telemetry is sent. Other --telemetry-* flags set specific values but do not enable telemetry on their own.  [deprecated: Use the "telemetry.enabled" setting in settings.json instead. This flag will be removed in a future version.] [boolean]
+      --telemetry-target         Set the telemetry target (local or gcp). Overrides settings files.  [deprecated: Use the "telemetry.target" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: "local", "gcp"]
+      --telemetry-otlp-endpoint  Set the OTLP endpoint for telemetry. Overrides environment variables and settings files.  [deprecated: Use the "telemetry.otlpEndpoint" setting in settings.json instead. This flag will be removed in a future version.] [string]
+      --telemetry-otlp-protocol  Set the OTLP protocol for telemetry (grpc or http). Overrides settings files.  [deprecated: Use the "telemetry.otlpProtocol" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: "grpc", "http"]
+      --telemetry-log-prompts    Enable or disable logging of user prompts for telemetry. Overrides settings files.  [deprecated: Use the "telemetry.logPrompts" setting in settings.json instead. This flag will be removed in a future version.] [boolean]
+      --telemetry-outfile        Redirect all telemetry output to the specified file.  [deprecated: Use the "telemetry.outfile" setting in settings.json instead. This flag will be removed in a future version.] [string]
+  -d, --debug                    Run in debug mode?  [boolean] [default: false]
+      --bare                     Minimal mode: skip implicit startup auto-discovery and only honor explicitly provided CLI inputs.  [boolean] [default: false]
+      --safe-mode                Disable all customizations (context files, hooks, extensions, skills, MCP servers) for troubleshooting.  [boolean]
+      --proxy                    Proxy for Qwen Code, like schema://user:password@host:port  [deprecated: Use the "proxy" setting in settings.json instead. This flag will be removed in a future version.] [string]
+      --insecure                 Skip TLS certificate verification for API connections (for self-signed certs in trusted/lab environments). Equivalent to setting QWEN_TLS_INSECURE=1. WARNING: removes protection against man-in-the-middle attacks.  [boolean] [default: false]
+      --chat-recording           Enable chat recording to disk. If false, chat history is not saved and --continue/--resume will not work.  [boolean]
+      --board                    Board name  [string]
+      --as                       Declared actor name  [string]
+      --json                     Emit JSON  [boolean]
+  -h, --help                     Show help  [boolean]

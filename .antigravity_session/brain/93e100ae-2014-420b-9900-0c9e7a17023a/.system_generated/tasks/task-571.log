@@ -1,0 +1,15 @@
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:577KiB ETA:6h3m6s]
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:577KiB ETA:6h2m37s]
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:577KiB ETA:6h3m9s]
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:577KiB ETA:6h2m53s]
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:580KiB ETA:6h54s]
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:573KiB ETA:6h5m11s]
+ *** Download Progress Summary as of Wed Oct  7 01:28:44 2026 *** 
+===============================================================================
+[#a240f6 3.6GiB/15GiB(23%) CN:15 DL:585KiB ETA:5h57m55s]
+FILE: /srv/nwa-model/models/main-27b/Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf
+-------------------------------------------------------------------------------
+
+total 3.7G
+-rw-r--r-- 1 root nwa-model  15G Oct  7 01:28 Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf
+-rw-r--r-- 1 root root      2.4K Oct  7 01:27 Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf.aria2

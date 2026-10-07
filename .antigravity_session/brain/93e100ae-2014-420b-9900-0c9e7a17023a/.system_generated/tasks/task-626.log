@@ -1,0 +1,28 @@
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       1.8Gi       366Mi        31Mi       5.8Gi       5.8Gi
+Swap:             0B          0B          0B
+=== TOP PROCESSES BY RAM ===
+    PID USER     %MEM   RSS COMMAND
+ 169402 root     10.4 830672 python3
+  45746 grafana   2.8 231400 grafana
+ 213749 nwa-qwen  2.4 195924 node
+ 169157 root      1.1 92996 dockerd
+    421 root      0.8 64388 systemd-journal
+  77786 root      0.7 56540 tailscaled
+  43708 ai-fore+  0.5 43484 uvicorn
+   1080 root      0.4 39868 containerd
+ 243792 root      0.4 34364 check-new-relea
+ 234293 root      0.3 30824 aria2c
+    467 root      0.3 27464 multipathd
+   4646 postgres  0.2 20724 postgres
+  43926 ai-gate   0.2 18892 python3
+   4645 postgres  0.2 18372 postgres
+=== CURRENT DOWNLOAD PROGRESS ===
+[#a240f6 6.4GiB/15GiB(40%) CN:14 DL:579KiB ETA:4h39m7s]
+[#a240f6 6.4GiB/15GiB(40%) CN:14 DL:579KiB ETA:4h38m46s]
+ *** Download Progress Summary as of Wed Oct  7 02:52:21 2026 *** 
+===============================================================================
+[#a240f6 6.4GiB/15GiB(40%) CN:14 DL:575KiB ETA:4h41m3s]
+FILE: /srv/nwa-model/models/main-27b/Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf
+-------------------------------------------------------------------------------
+

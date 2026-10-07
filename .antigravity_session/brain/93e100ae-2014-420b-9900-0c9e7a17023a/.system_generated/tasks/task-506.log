@@ -1,0 +1,5 @@
+labadmin  234269  0.0  0.0   7752  3536 ?        Ss   23:51   0:00 bash -c sudo chmod +x /home/labadmin/run_aria2_models.sh; sudo nohup bash /home/labadmin/run_aria2_models.sh > /dev/null 2>&1 & sleep 3; ps aux | grep aria2
+root      234272  0.0  0.0  17156  6980 ?        S    23:51   0:00 sudo nohup bash /home/labadmin/run_aria2_models.sh
+root      234274  0.0  0.0   7752  3568 ?        S    23:51   0:00 bash /home/labadmin/run_aria2_models.sh
+root      234293  2.0  0.2  68836 22244 ?        S    23:51   0:00 aria2c -x 16 -s 16 -k 1M -c --file-allocation=none --summary-interval=5 -d /srv/nwa-model/models/main-27b -o Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF/resolve/main/Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf
+labadmin  234296  0.0  0.0   7088  2156 ?        S    23:51   0:00 grep aria2

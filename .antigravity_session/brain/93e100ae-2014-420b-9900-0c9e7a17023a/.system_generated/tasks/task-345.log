@@ -1,0 +1,5 @@
+SETTINGS_UPDATED_SUCCESS
+Approved MCP server "memory" (bound to its current config).
+Approved servers connect in your next interactive session.
+Configured MCP servers:
+✓ memory: npx -y @modelcontextprotocol/server-memory (stdio) - Connected

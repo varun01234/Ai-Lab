@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      `interactive-widget=resizes-content` is Chrome-on-Android-only (108+);
+      iOS Safari silently ignores it — the virtual keyboard always overlays
+      the viewport there. Keyboard-aware layout on iOS requires the
+      VirtualKeyboard API or `visualViewport` resize events instead.
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <!--
+      Status bar color follows the active theme; the inline script below
+      updates this meta tag in the same tick it applies the theme class so
+      mobile browsers never flash the default (white) bar.
+    -->
+    <meta name="theme-color" content="#0d0d0d" />
+    <title>Qwen Code Web chat</title>
+    <!--
+      PWA manifest: makes the Web Shell installable on Android / iOS.
+      start_url is intentionally relative ("/") so it resolves against
+      whatever daemon origin serves this page — never hard-coded.
+      The manifest itself is served by the daemon's static handler at /manifest.webmanifest.
+    -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- The CSS floor follows Tailwind v4, independently of the ES2021 JS target.
+         Keep this guard ES5 so unsupported engines can still show the fallback. -->
+    <!-- prettier-ignore -->
+    <script>
+      !(function () {
+        try {
+          var ua = navigator.userAgent;
+          var chromium = ua.match(/Chrom(?:e|ium)\/(\d+)/);
+          var firefox = ua.match(/Firefox\/(\d+)/);
+          // Android WebView also carries `Version/4.0 ... Safari/`, but its
+          // actual engine version is the Chromium token handled above.
+          var safari =
+            !chromium && ua.match(/Version\/(\d+)(?:\.(\d+))?.*Safari\//);
+          var unsupported =
+            (chromium && parseInt(chromium[1], 10) < 111) ||
+            (firefox && parseInt(firefox[1], 10) < 128) ||
+            (safari &&

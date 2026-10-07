@@ -1,0 +1,11 @@
+[#a240f6 4.2GiB/15GiB(27%) CN:15 DL:547KiB ETA:6h3m54s]
+[#a240f6 4.2GiB/15GiB(27%) CN:15 DL:546KiB ETA:6h4m34s]
+[#a240f6 4.2GiB/15GiB(27%) CN:15 DL:543KiB ETA:6h6m14s]
+[#a240f6 4.2GiB/15GiB(27%) CN:15 DL:552KiB ETA:6h20s]
+ *** Download Progress Summary as of Wed Oct  7 01:47:06 2026 *** 
+===============================================================================
+[#a240f6 4.2GiB/15GiB(27%) CN:15 DL:540KiB ETA:6h8m23s]
+FILE: /srv/nwa-model/models/main-27b/Huihui-Qwen3.8-27B-abliterated-Q4_K.gguf
+-------------------------------------------------------------------------------
+
+dd: failed to open '/srv/nwa-model/disk_test.img': Permission denied

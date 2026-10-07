@@ -1,0 +1,5 @@
+nc: connect to 172.31.250.1 port 22 (tcp) timed out: Operation now in progress
+nc: connect to 172.31.250.1 port 5985 (tcp) timed out: Operation now in progress
+nc: connect to 172.31.250.1 port 5986 (tcp) timed out: Operation now in progress
+nc: connect to 172.31.250.1 port 445 (tcp) timed out: Operation now in progress
+nc: connect to 172.31.250.1 port 3389 (tcp) timed out: Operation now in progress
